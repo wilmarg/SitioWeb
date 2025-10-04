@@ -9,9 +9,6 @@ def home(request):
 def tienda(request):
     return render(request, "SitioWebApp/tienda.html")
 
-def blog(request):
-    return render(request, "SitioWebApp/blog.html")
-
 def contacto(request):
     return render(request, "SitioWebApp/contacto.html")
 
