@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Categorias</title>
 </head>
 <body>
 
@@ -45,7 +45,7 @@
 
                 {% for categoria in post.categoria.all %}
            
-                    <a href="{% url 'categoria' categoria.id %}" class="linksCategorias"> {{categoria.nombre}} </a> &nbsp;&nbsp;&nbsp;
+                    {{categoria.nombre}} &nbsp;&nbsp;&nbsp;
 
                 {% endfor %}
 
