@@ -1,0 +1,36 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+
+
+{% extends 'SitioWebApp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="contenedorFormulario"> 
+
+        <form action="" method="POST" style="text-align: center;">
+            {% csrf_token %}
+            <table style="color: white; margin: 20px auto;">
+
+                {{formulario.as_table}} 
+            </table>
+
+            <input type= "submit" value="Enviar">
+        </form>
+
+    </div>
+
+
+{% endblock %}
+
+
+
+</body>
+</html>
