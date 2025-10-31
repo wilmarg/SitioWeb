@@ -13,6 +13,19 @@
 
 {% block content %}
 
+    {% for producto in productos %}
+
+        {{producto.nombre}}
+        {{producto.categorias}}
+        {{producto.precio}}
+        <img src="{{producto.imagen.url}}" alt="" style="width: 50%;">
+        {{producto.disponibilidad}}
+    
+    {% endfor %}
+
+
+
+
 {% endblock %}
 
 
