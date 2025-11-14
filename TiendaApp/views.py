@@ -9,4 +9,3 @@ def tienda(request):
     return render(request, "tienda/tienda.html", {"productos": productos})
 
 
-
