@@ -25,6 +25,6 @@ urlpatterns = [
     path('blog', include('BlogApp.urls')),
     path('contacto', include('ContactoApp.urls')),
     path('tienda', include('TiendaApp.urls')),
-
+    path('carrito', include('carritoApp.urls')),
+    
 ]
-
