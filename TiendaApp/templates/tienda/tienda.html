@@ -17,7 +17,7 @@
 <div class="contanier">
 
     <div style="float: right;">
-        <!--  <p style="color: white; text-align: center;">Total: ${{importe_total_carrito}} COP</p>  --> 
+        <!-- p style="color: white; text-align: center;">Total: ${{importe_total_carrito}} COP</p>  -->
 
         {% include "carrito/widget.html" %}
     </div>
@@ -40,7 +40,7 @@
                     </div>
                             
                     <div class="card-footer text-center">
-                        <a href="{% url 'carrito:agregar' producto_id %}" class="btn btn-success">Agregar al carrito</a>
+                        <a href="{% url 'carrito:agregar' producto.id %}" class="btn btn-success">Agregar al carrito</a>
                     </div>
                 </div>
                 

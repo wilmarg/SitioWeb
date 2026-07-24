@@ -33,3 +33,4 @@ def limpiar_carrito(request, producto_id):
     carrito.limpiar_carrito()
     return redirect("Tienda")
 
+
