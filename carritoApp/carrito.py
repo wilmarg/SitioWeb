@@ -9,8 +9,8 @@ class Carrito:
         if not carrito:
             carrito = self.session["Carrito"] = {}
 
-        else:
-            self.carrito = carrito
+        ##else:
+        self.carrito = carrito
     
 
     def agregar(self, producto):
